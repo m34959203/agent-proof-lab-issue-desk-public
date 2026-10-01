@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "tickets": [
+    {"id":"VIEW-OPEN","title":"Fictional export shows accented text incorrectly","body":"In this invented example a CSV export shows broken accented text in a spreadsheet. Inspect the original bytes and spreadsheet import settings.","status":"open","resolution":""},
+    {"id":"VIEW-PRIOR","title":"Fictional CSV encoding investigation","body":"A prior invented case showed correct UTF-8 bytes but the spreadsheet used a different encoding.","status":"resolved","resolution":"The operator explicitly selected UTF-8 while importing the CSV. Verify the current file before reusing that fix."}
+  ]
+}

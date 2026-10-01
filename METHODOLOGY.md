@@ -1,0 +1,7 @@
+# Retrieval and decision boundary
+
+Word search lowercases ASCII word/digit tokens, removes a fixed small stop list and single-character tokens, then calculates set Jaccard overlap: intersection / union. It compares selected open-ticket title/body with resolved-case title/body, drops zero-overlap cases and returns at most five. Ties sort by ID. This is lexical overlap, not BM25 and not AI. Negation and chronology are not understood.
+
+Optional semantic search embeds the same texts with a pinned local bge-m3 model and uses cosine similarity. It validates count, matching vector dimensions, finite values and positive norms. It returns at most five candidates, including low-scoring ones: no calibrated relevance threshold is claimed. Scores are not probabilities or evidence of a shared root cause. Resolution text is displayed verbatim for the operator to inspect, not generated or automatically applied. Neither search can write a review.
+
+A saved review is an explicit operator choice plus note. Linking requires an existing resolved case. Saving/amending/reopening appends history and advances the queue revision. Compare-and-swap serializes mutations; stale tabs must reload. Import replaces the whole dataset and clears reviews after a UI confirmation. Server validates before atomic disk replacement. Search responses bind ticket and revision; stale UI responses are discarded. No ticket closure, message, severity assignment or automatic escalation occurs.

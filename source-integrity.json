@@ -1,0 +1,54 @@
+{
+  "sourceCommit": "f0059b07b5571162ec4b4441cac2636b8e98e096",
+  "scope": "Runtime, native tests and lockfile copied unchanged; documentation and optional tools are successor additions",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "22a68e2efc37514ad3275e8d27ec30cd0877381dfd475237aa25b737ce977126"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "a214a74600d0b8a2205ca05656c0a32850fd28754871dbd42adad13d5256e1e6"
+    },
+    {
+      "path": "engine.mjs",
+      "sha256": "0b7f8d86380312704fa11991815173220b31840ef42e938c643fb3aeebe50222"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "8e23287882cc5c5b6b58cf58b38f590501b7b16a6ab9487185ca7a2546fd3caf"
+    },
+    {
+      "path": "package.json",
+      "sha256": "2881995649f89cb1ebc2655d5f4712ed04c77addad99dc6ef79d6263753aa2b1"
+    },
+    {
+      "path": "public/app.js",
+      "sha256": "e06add51a8396d82c1d881c64ff1a427bb180c53cf7e7ef7ba142c09168f0a45"
+    },
+    {
+      "path": "public/index.html",
+      "sha256": "09f4d1cebdee0fb637115ca849a0d39d54e720f7f6380436e462810a609e59af"
+    },
+    {
+      "path": "public/style.css",
+      "sha256": "72bafe7a6141f30b420f9356fe648f62e7e8ffbe034099a4497ca6b65717fea2"
+    },
+    {
+      "path": "server.mjs",
+      "sha256": "dd5da856c36ea51d7383802c2c72e2e7190645a3221b343babe2858131c624ed"
+    },
+    {
+      "path": "store.mjs",
+      "sha256": "01b5fe04b15c3ab684c9933769b6dcbfab6885b228e02b4f15b0949809cea07f"
+    },
+    {
+      "path": "test/import-response.test.mjs",
+      "sha256": "78ce35e15dfb68c06a23c3b2b9ab81b58a79fabc83170774407c934b70973363"
+    },
+    {
+      "path": "test/product.test.mjs",
+      "sha256": "952d99d35b83572445de112b134158e6213d99ca49bd9b22122fb07e61fbea76"
+    }
+  ]
+}

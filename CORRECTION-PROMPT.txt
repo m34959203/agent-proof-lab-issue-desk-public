@@ -1,0 +1,35 @@
+Issue Desk: record a real correction of ISSUE-TECH-01.
+Baseline: 09dec80682f20845230b721f59e122a1ce9e2916.
+This is reviewer-driven work, not the original build.
+Both Replace queue and Load demo can display an old response.
+Retain the latest revision and the saved review note.
+Show the real diff, tests and corrected browser result.
+
+Read README.md, BRIEF.md, ACCEPTANCE.md and public/app.js in this project.
+The independent reviewer reproduced this controlled race on both entry points:
+let /api/import commit revision 1, delay its response, Reload queue,
+save a review at revision 2, then release the old import response.
+The UI falls to revision 1 and empty history; the server retains revision 2.
+Protect both completion paths with freshness/revision handling or serialization.
+Do not weaken stale-search, file-read invalidation, invalid-import or CAS behavior.
+Keep manual operator approval, literal evidence and optional local embeddings.
+No automatic closing/replies, accounts, provider changes, downloads or spend.
+Use only fictional demo data. Do not manufacture a new fault for the recording.
+
+Allowed source changes: public/app.js and focused regression tests under test/.
+Do not reformat the entire product or edit other production files.
+Do not commit: the outer controller freezes the reviewed candidate afterwards.
+No second agent, nested CLI, auth, timer, policy or sandbox changes.
+Do not read private raw sessions or hidden reasoning. Do not print environment,
+credentials, private paths or session IDs. No Claude retry.
+
+Run npm test. Run the frozen real-browser regression using these Bash commands:
+node "$ISSUE_DESK_REGRESSION" . "$ISSUE_DESK_CHECKS/after"
+The external evaluator and prompt are frozen: do not edit either.
+Its exit 1 on baseline is expected; 2 is a harness error, not a reproduced bug.
+Both modes must finish PASS with UI/server revision 2 and the saved note.
+Record the minimal real diff and any unsuccessful attempts; never invent PASS.
+If browser tests cannot run inside the existing sandbox, report that limitation;
+the runner will verify serially after you return. Do not change permissions.
+The recorder is a live browser PTY, Linux/Bash, automated input, not PowerShell.
+Stop if recording fails. No independent acceptance or publication is authorized.

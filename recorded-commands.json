@@ -1,0 +1,42 @@
+[
+  {
+    "input": "node --version; git rev-parse --short HEAD",
+    "at": 0.168
+  },
+  {
+    "input": "node \"$ISSUE_DESK_REGRESSION\" . \"$ISSUE_DESK_CHECKS/baseline\"; printf \"\\n[BASELINE_EXIT=%s]\\n\" \"$?\"",
+    "at": 2.22
+  },
+  {
+    "input": "clear; head -6 \"$ISSUE_DESK_PROMPT\"",
+    "at": 13.103
+  },
+  {
+    "input": "cat \"$ISSUE_DESK_EXCERPT\"",
+    "at": 17.155
+  },
+  {
+    "input": "issue-fix; printf \"\\n[CODEX_EXIT=%s]\\n\" \"$?\"",
+    "at": 20.209
+  },
+  {
+    "input": "clear; node --test --test-reporter=spec; printf \"\\n[TEST_EXIT=%s]\\n\" \"$?\"",
+    "at": 109.683
+  },
+  {
+    "input": "node \"$ISSUE_DESK_REGRESSION\" . \"$ISSUE_DESK_CHECKS/outer-after\"; printf \"\\n[REGRESSION_EXIT=%s]\\n\" \"$?\"",
+    "at": 113.888
+  },
+  {
+    "input": "node \"$ISSUE_DESK_COMPAT\"; printf \"\\n[COMPAT_EXIT=%s]\\n\" \"$?\"",
+    "at": 126.466
+  },
+  {
+    "input": "git diff --stat; git diff --check",
+    "at": 131.67
+  },
+  {
+    "input": "git diff -- public/app.js | fold -s -w 90",
+    "at": 134.222
+  }
+]
